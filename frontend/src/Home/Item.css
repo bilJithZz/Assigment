@@ -1,0 +1,49 @@
+/* ListItem.css */
+
+.list--item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #2c3e50;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+  }
+  
+  .list--item:nth-child(even) {
+    background-color: #2c3e50;
+  }
+  
+  .list-no, .list-platform, .list-last, .list-buy-sell, .list-diff, .list-saving {
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .list-no {
+    font-weight: bold;
+  }
+  
+  .list-platform {
+    font-size: 1rem;
+  }
+  
+  .list-last, .list-buy-sell, .list-diff, .list-saving {
+    font-size: 0.9rem;
+  }
+  
+  .list-diff, .list-saving {
+    font-weight: bold;
+  }
+  
+  .list-diff {
+    color: #da5757; /* Default color, will be overridden inline */
+  }
+  
+  .list-saving {
+    color: #da5757; /* Default color, will be overridden inline */
+  }
+  

@@ -1,0 +1,90 @@
+/* List.css */
+
+.trade-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #20232a;
+    color: white;
+  }
+  
+  .list--head {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .list--head > div {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .list--head .list-no {
+    font-size: 0.9rem;
+  }
+  
+  .list--head .list-platform {
+    font-size: 1rem;
+  }
+  
+  .list--head .list-last,
+  .list--head .list-buy-sell,
+  .list--head .list-diff,
+  .list--head .list-saving {
+    font-size: 0.9rem;
+  }
+  
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: #20232a;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+  }
+  
+  .list-item:nth-child(even) {
+    background-color: #20232a;
+  }
+  
+  .list-item > div {
+    text-align: center;
+  }
+  
+  .list-item .list-no {
+    font-weight: bold;
+  }
+  
+  .list-item .list-platform {
+    font-size: 0.9rem;
+  }
+  
+  .list-item .list-last,
+  .list-item .list-buy-sell,
+  .list-item .list-diff,
+  .list-item .list-saving {
+    font-size: 0.8rem;
+  }
+  
+  .list-item .list-diff {
+    font-weight: bold;
+  }
+  
+  .list-item .list-saving {
+    font-weight: bold;
+  }
+  
+  /* Loading and error states */
+  .loading, .error {
+    text-align: center;
+    margin: 20px;
+    color: #ff0000;
+    font-size: 1.1rem;
+  }
+  
